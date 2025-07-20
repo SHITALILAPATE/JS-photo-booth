@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Booth</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1 style="font-family: 'Brush Script MT', cursive;">Photo Booth ✨</h1>
+
+  <!-- Emoji background decorations -->
+  <div class="emoji-background emoji-1">🌸</div>
+  <div class="emoji-background emoji-2">🦋</div>
+  <div class="emoji-background emoji-3">🍭</div>
+  <div class="emoji-background emoji-4">🌈</div>
+  <div class="emoji-background emoji-1">🌸</div>
+  <div class="emoji-background emoji-2">🦋</div>
+  <div class="emoji-background emoji-3">🍭</div>
+  <div class="emoji-background emoji-4">🌈</div>
+
+  <div class="photo-booth">
+    <div class="camera-container">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas"></canvas>
+      <canvas id="filter-preview" class="filter-preview"></canvas>
+      <div id="placeholder" class="placeholder">Click "Start Camera" to begin 📸</div>
+      <div id="flash" class="flash"></div>
+      <div id="timer" class="timer-display">3</div>
+      <div id="counter" class="counter">Photos: 0/4</div>
+      
+      <div id="collage-container" class="collage-container">
+        <div class="collage" id="collage">
+          <div class="collage-item" id="collage-1"></div>
+          <div class="collage-item" id="collage-2"></div>
+          <div class="collage-item" id="collage-3"></div>
+          <div class="collage-item" id="collage-4"></div>
+        </div>
+      </div>
+      
+      <div id="single-photo-container" class="single-photo-container">
+        <img id="single-photo" class="single-photo">
+        <div class="single-photo-buttons">
+          <button id="save-single-btn">💾 Save Photo</button>
+          <button id="back-to-collage-btn">🔙 Back</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="none">Normal</button>
+      <button class="filter-btn" data-filter="grayscale">Grayscale</button>
+      <button class="filter-btn" data-filter="sepia">Vintage</button>
+      <button class="filter-btn" data-filter="dreamy">Dreamy ✨</button>
+      <button class="filter-btn" data-filter="blur">Soft Focus</button>
+    </div>
+    
+    <div class="controls" id="main-controls">
+      <button id="startBtn">🎥 Start Camera</button>
+      <button id="captureBtn" disabled>📸 Take</button>
+      <button id="singlePhotoBtn" disabled>🌸</button>
+    </div>
+    
+    <div class="action-buttons" id="action-buttons">
+      <button id="retakeBtn">🔄 Retake</button>
+      <button id="saveBtn">💾 Save Collage</button>
+      <button id="viewPhotosBtn">👀 View Photos</button>
+    </div>
+  </div>
+  
+  <div class="gallery" id="gallery"></div>
+ <script src="./script.js"></script>
+</body>
+</html>
