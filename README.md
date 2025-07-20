@@ -1,4 +1,4 @@
-# 📸 Web Photo Booth
+# 📸 Web Photo Booth.!
 
 A fun photo booth web app with filters and collage mode. Take photos, apply effects, and save your memories!
 
