@@ -1,0 +1,1 @@
+# JS-photo-booth
